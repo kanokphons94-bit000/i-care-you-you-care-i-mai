@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "Noto Sans Thai", sans-serif;
+  background: #fff5f8;
+  color: #333;
+}
+
+.screen {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.welcome-card {
+  width: min(420px, 100%);
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  margin: 8px 0 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #d95d8a;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.topbar {
+  background: white;
+  padding: 20px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.topbar h1 {
+  margin-bottom: 5px;
+}
+
+.topbar p {
+  margin: 0;
+}
+
+.secondary-button {
+  background: #777;
+  font-size: 14px;
+}
+
+.content {
+  width: min(900px, 92%);
+  margin: 30px auto;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.success {
+  color: #248a55;
+}
+
+.error {
+  color: #c0392b;
+  min-height: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}

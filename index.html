@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Period Care</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- หน้าใส่ชื่อ -->
+  <section id="nameScreen" class="screen">
+    <div class="card welcome-card">
+      <h1>Period Care</h1>
+      <p>กรุณาใส่ชื่อของคุณเพื่อเริ่มใช้งาน</p>
+
+      <input
+        id="nameInput"
+        type="text"
+        maxlength="30"
+        placeholder="พิมพ์ชื่อของคุณ"
+        autocomplete="name"
+      >
+
+      <button id="startButton">เริ่มใช้งาน</button>
+      <p id="nameError" class="error"></p>
+    </div>
+  </section>
+
+  <!-- หน้าหลัก -->
+  <main id="appScreen" class="hidden">
+    <header class="topbar">
+      <div>
+        <h1>Period Care</h1>
+        <p id="welcomeText"></p>
+      </div>
+      <button id="changeNameButton" class="secondary-button">เปลี่ยนชื่อ</button>
+    </header>
+
+    <section class="content">
+      <div class="card">
+        <h2>บันทึกประจำเดือน</h2>
+
+        <label for="periodDate">วันแรกที่มีประจำเดือน</label>
+        <input id="periodDate" type="date">
+
+        <label for="cycleLength">ความยาวรอบประจำเดือน (วัน)</label>
+        <input id="cycleLength" type="number" min="1" max="60" value="28">
+
+        <button id="saveButton">บันทึกข้อมูล</button>
+        <p id="saveMessage" class="success"></p>
+      </div>
+
+      <div class="card">
+        <h2>ข้อมูลของฉัน</h2>
+        <p>ชื่อ: <strong id="displayName">-</strong></p>
+        <p>วันแรกของประจำเดือนล่าสุด: <strong id="displayDate">-</strong></p>
+        <p>รอบถัดไปโดยประมาณ: <strong id="nextPeriod">-</strong></p>
+      </div>
+
+      <div class="card">
+        <h2>คำแนะนำเมื่อปวดท้องประจำเดือน</h2>
+        <ul>
+          <li>พักผ่อนให้เพียงพอ</li>
+          <li>ดื่มน้ำให้เพียงพอ</li>
+          <li>ประคบอุ่นบริเวณท้องเพื่อช่วยให้รู้สึกสบายขึ้น</li>
+          <li>หากอาการปวดรุนแรงหรือผิดปกติ ควรบอกผู้ปกครองหรือปรึกษาบุคลากรทางการแพทย์</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
